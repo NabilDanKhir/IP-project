@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div th:fragment="header">
+      <header style="display:flex; align-items:center; gap:12px; padding:12px 20px;">
+        <img th:src="@{/gmba/logo.png}" alt="logo" style="height:56px;">
+        <h2 style="margin:0;">Persatuan Anak Kelantan</h2>
+        <div style="margin-left:auto;">
+          <a th:href="@{/menu}" style="margin-right:12px;">Menu</a>
+          <a th:href="@{/logout}">Keluar</a>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>

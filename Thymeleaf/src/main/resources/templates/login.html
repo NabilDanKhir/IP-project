@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Persatuan Anak Kelantan - Login</title>
+  <link rel="stylesheet" th:href="@{/css/Styles.css}">
+</head>
+<body>
+  <div th:replace="fragments :: header"></div>
+
+  <main style="display:flex;justify-content:center; padding:30px;">
+    <form class="login-container" th:action="@{/login}" method="post" style="width:360px;">
+      <div style="text-align:center;">
+        <img th:src="@{/gmba/logo.png}" alt="Logo" style="height:120px; width:120px; object-fit:contain;">
+        <h1 style="margin:8px 0;">Persatuan Anak Kelantan</h1>
+        <p>Sila log masuk untuk meneruskan</p>
+      </div>
+
+      <div id="message" class="message" th:if="${message}" th:text="${message}" th:style="'color:' + (${error} ? 'red' : 'green')"></div>
+
+      <label for="username">Nama Pengguna</label>
+      <input type="text" id="username" name="username" placeholder="Contoh: admin" required>
+
+      <label for="password">Kata Laluan</label>
+      <input type="password" id="password" name="password" placeholder="Masukkan kata laluan" required>
+
+      <button type="submit">Log Masuk</button>
+
+      <div style="text-align:center; margin-top:10px;">
+        <a th:href="@{/signup}">Akaun baru? Daftar di sini</a>
+      </div>
+    </form>
+  </main>
+
+  <script th:src="@{/js/login.js}"></script>
+</body>
+</html>

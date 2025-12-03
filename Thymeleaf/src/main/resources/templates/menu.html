@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Menu - Persatuan Anak Kelantan</title>
+  <link rel="stylesheet" th:href="@{/css/Styles.css}">
+</head>
+<body>
+  <div th:replace="fragments :: header"></div>
+
+  <main style="padding:20px;">
+    <h2>Menu Utama</h2>
+    <p>Selamat datang, <span th:text="${user.username}">User</span> (Role: <span th:text="${user.role}">Role</span>)</p>
+
+    <div>
+      <a th:href="@{/some-page}">Fungsi 1</a>
+      <!-- add menu items -->
+    </div>
+  </main>
+</body>
+</html>

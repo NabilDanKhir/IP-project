@@ -1,2 +1,6 @@
+com\example\pak\controller\AuthRestController.class
 com\example\dashboard\ThymeleafDashboardApplication.class
+com\example\pak\service\UserService.class
 com\example\dashboard\controller\DashboardController.class
+com\example\pak\model\User.class
+com\example\pak\controller\MvcController.class
