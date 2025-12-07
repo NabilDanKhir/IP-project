@@ -36,8 +36,8 @@ public class MvcController {
         if (opt.isPresent()){
             User u = opt.get();
             session.setAttribute("user", u);
-            // redirect to menu
-            return "redirect:/menu";
+            // redirect to dashboard
+            return "redirect:/dashboard";
         } else {
             model.addAttribute("message", "Nama pengguna atau kata laluan salah");
             model.addAttribute("error", true);
