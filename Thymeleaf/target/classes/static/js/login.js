@@ -11,6 +11,11 @@ function showMessage(elementId, message, isError = false) {
 document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('loginForm');
 
+    // Form will submit normally to /login POST endpoint
+    // which creates a server-side session
+    
+    // Commented out API-based login - using session-based instead
+    /*
     if (loginForm) {
         loginForm.addEventListener('submit', async (e) => {
             e.preventDefault();
@@ -46,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+    */
 
     const token = localStorage.getItem('token');
     if (token) {

@@ -37,12 +37,21 @@ public class MvcController {
             User u = opt.get();
             session.setAttribute("user", u);
             // redirect to menu
-            return "redirect:/dashboard";
+            return "redirect:/menu";
         } else {
             model.addAttribute("message", "Nama pengguna atau kata laluan salah");
             model.addAttribute("error", true);
             return "login";
         }
+    }
+
+    @GetMapping("/menu")
+    public String showMenu(HttpSession session, Model model){
+        User user = (User) session.getAttribute("user");
+        if (user != null) {
+            model.addAttribute("user", user);
+        }
+        return "menu";
     }
 
     @GetMapping("/signup")

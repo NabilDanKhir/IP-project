@@ -2,7 +2,6 @@ com\example\dashboard\controller\MeetingsController.class
 com\example\dashboard\controller\AccountController.class
 com\example\dashboard\controller\MvcController.class
 com\example\dashboard\controller\AttendanceController.class
-com\example\pak\controller\AuthRestController.class
 com\example\dashboard\ThymeleafDashboardApplication.class
 com\example\dashboard\controller\MembersController.class
 com\example\pak\service\UserService.class
