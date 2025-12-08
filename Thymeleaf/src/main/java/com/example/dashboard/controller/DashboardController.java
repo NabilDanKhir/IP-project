@@ -16,7 +16,7 @@ public class DashboardController {
 
         List<Map<String, Object>> modules = List.of(
             Map.of("key","account","label", "Account Management", "desc", "Edit and Delete accounts", "link", "/accounts"),
-            Map.of("key","profile","label", "Member Profile", "desc", "View and edit member profiles", "link", "/profile"),
+            Map.of("key","profile","label", "Member Profile", "desc", "View and edit member profiles", "link", "/members"),
             Map.of("key","meeting","label", "Meeting Management", "desc", "Create meetings & upload minutes", "link", "/meetings"),
             Map.of("key","attendance","label", "Attendance Management", "desc", "Manage and check attendance", "link", "/attendance")
         );
