@@ -20,22 +20,7 @@
         </div>
       </div>
     </section>
-
-    <section class="mt-12">
-      <h2>Recent</h2>
-      <div style="margin-top:8px;">
-        <table class="table">
-          <thead><tr><th>ID</th><th>Name</th><th>Status</th></tr></thead>
-          <tbody>
-            <tr th:each="r : ${recent}">
-              <td th:text="${r.id}">0</td>
-              <td th:text="${r.name}">Name</td>
-              <td th:text="${r.status}">Status</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+    
   </main>
 </body>
 </html>
